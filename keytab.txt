@@ -1,0 +1,24 @@
+C:\>ktpass -princ HTTP/www.example.com@EXAMPLE.COM -mapuser krbsrv@example.com -crypto RC4-HMAC-NT -ptype KRB5_NT_PRINCIPAL -pass <Password> -out c:\temp\krb5.keytab
+
+
+ktpass -princ HTTP/serverfqdn@domain_name -mapuser userid@domain_name -crypto RC4-HMAC-NT -ptype KRB5_NT_PRINCIPAL -pass ********* -out C:\Keytab\userid.keytab
+
+
+
+
+ktpass -princ userid@domain_name -mapuser userid -crypto AES256-SHA1 -ptype KRB5_NT_PRINCIPAL -pass ********* -out C:\Keytab\filename.keytab
+
+
+setspn –A user01/server_fqdn user01
+
+
+Setspn -s http/serverfqdn domain\userid
+
+
+
+
+ktpass -princ HTTP/<Serverfqdn>@<domain1fqdn> -mapuser User01@doamin1fqdn -crypto ALL -ptype KRB5_NT_PRINCIPAL -pass ********** -out C:\Keytab\user01_ALL.keytab
+
+
+
+ktpass -princ HTTP/<Serverfqdn>@<domain2fqdn> -mapuser User02@doamin2fqdn -crypto ALL -ptype KRB5_NT_PRINCIPAL -pass ********** -out C:\Keytab\user02_ALL.keytab
