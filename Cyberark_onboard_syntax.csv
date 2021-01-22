@@ -1,0 +1,3 @@
+Password_name,Safe,Folder,Password,DeviceType,PolicyID,Address,UserName,ResetImmediately,Description
+<Name of the object>,<Safe Name>,Root,<Password>,Operating System,<ObjectCatogory>,<Domain Name>,<User ID>,ChangeTask/Verify/Reconcile,
+Operating System-_WinDomain-apac.corpdir.net-AGSC_RDI_s_XXXXX,623_24-Reconcile,Root,XXXXXX,Operating System,_WinDomain,www.contoso.com,AGSC_RDI_s_XXXXX,ChangeTask,
