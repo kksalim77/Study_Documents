@@ -1,0 +1,1 @@
+C:\Windows\ccmsetup>ccmsetup.exe /forceinstall SMSSITECODE="<SITE_Code>" SMSMP="<Management_Point_fqdn>" DNSSUFFIX="<DNS_Suffix>"
